@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+
+ int main(){
+   const int size = 3;
+   char arr[size];
+   printf("Eter the chars");
+   for(int i = 0; i < size; ++i){
+    scanf(" %c",&arr[i]);  
+   }
+   for(int i = 0;i < size;++i){
+   if(arr[i] >= 'a'&& arr[i]<= 'z'){
+     arr[i] = arr[i] - 'a'+'A';
+   }
+   }
+    printf("%s\n",arr);
+    return 0;
+ }
